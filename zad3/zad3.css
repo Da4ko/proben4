@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+body{
+    font-family: 'Roboto' sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.bg-img-section{
+    background-image: url(image/image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh ;
+    width: 80vw;
+    padding: 45px 65px;
+}
+.heading-line{
+    color: #fff;
+}
+
+.interior-design.heading{
+    width: 10px;
+}
+.interior-design{
+    font-size: x-large;
+    display: inline-block;
+    padding: 3.5rem;
+    box-shadow: 10px 10px 10px#6e6c6c;
+    border: 1px solid black;
+
+}
+
+.bg-img-section .desc{
+background-image: linear-gradient(to right, #9b9189, #c9c7c6);
+position: relative;
+right: -60%;
+bottom: -5%;
+color: white;
+font-size: x-large;
+height: 33%;
+width: 33%;
+padding: 16px;
+text-align: end;
+}
+
+/*
+------------------------------
+
+-------SECONDD SECTION--------
+
+------------------------------
+*/
+.info-section{
+height: 10vh ;
+width: 80vw;
+display: grid;
+
+grid-template-areas: 
+"service service sidebar"
+"service service sidebar"
+"service service sidebar"
+"contact contact sidebar";
+}
+
+.info-section .our-services{
+    grid-area: service;
+    background-color: #f2f0f3;
+
+    padding: 30px;
+    padding-bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.heading-service{
+    font-weight: 500;
+    font-size: 60px;
+    padding: 6px 60px 6px 60px;
+}
+
+.our-services .paragraph{
+    font-size: x-large;
+    font-weight: 300;
+    padding: 6px 60px 6px 60px;
+}
+
+.info-section .contact{
+    grid-area: contact;
+    background-color: #f2f0f3;
+
+    padding: 30px;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+}
+.info-section .contact .details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px; 
+
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.info-section .right{
+    grid-area: sidebar;
+    background-color: #bab1ad;
+
+    padding: 10px 100px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.info-section .right .num{
+   color: white;
+   font-size: 70px;
+   font-weight: 100;
+}
+.heading-contact{
+    padding-left: 50px;
+    font-size: 50px;
+}
+.contact .separator{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.btns{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.btns input{
+    background-color: #bab1ad;
+    color: #c23030;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #bab1ad;
+    border-style: hidden;
+
+    width: 400px;
+}
+.btns button{
+    background-color: #67784d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: hidden;
+}
